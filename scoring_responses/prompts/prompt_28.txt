@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Agent's Message: Hi\u00a0<PERSON>,\nThank you for contacting us!\nOur Customer Care team is typically available from <DATE_TIME> Mountain Standard Time <DATE_TIME>.\nYour email is important to us! We will respond to your message as soon as possible during our <DATE_TIME>.\nPlease visit our\nHelp Center\nfor queries regarding tracking, returns, refunds, and order edits.\nWishing you the best in health and many blessings,\nThe Healthy Gut Team\nCustomer's Message: I have not received my order.\nSent from Yahoo Mail on <LOCATION>\n", "response": "Hi <PERSON>,\n\nI'm so sorry to hear that your order hasn't arrived yet, my dear. I've checked your tracking information at <URL> and it seems there's been a delay. Rest assured, we're on top of it and will ensure your package reaches you soon. If you need anything else, just let me know.\n\nWarm hugs,\n<PERSON>", "agent_response": "Hi <PERSON>,\nI'm so sorry to hear that your order hasn't arrived yet, my dear. I've checked your tracking information at\n<URL>\nand it seems there's been a delay but your package has cleared customs. Your order should be arriving to you soon.\nPlease let us know if you have any further questions, comments, or concerns. We are happy to help.\nWishing you the best of health and many blessings."}

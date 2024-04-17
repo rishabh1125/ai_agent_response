@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Customer's Message: Good <DATE_TIME>\n\nI have just purchased my 2nd pack of super greens extreme from yourselves. Can I ask if the ingredients or quantities have changed at all? Whilst the 1st pack wasn't an amazing taste I was able to drink it without the risk of being ill. This replacement pack tastes completely different and not in a good way, but is genuinely that bad it makes me heave and brings me out in a sweat (probably the thought of it). Like I say I have gone from 1 pack to the next, the packaging looks identical and there is certainly no suggestion on the replacement item packaging that the ingredients or recipe had changed so I thought I'd reach out and ask.\n\nSorry to trouble you\n\n<PERSON>\n\nSent from\nOutlook for Android\n", "response": "Hello <PERSON>,\n\nThank you for reaching out to us. We recently updated our Super Greens Extreme formula to improve taste and nutrition, which may have altered the flavor profile. If you're not satisfied with the product, we can arrange a return for store credit. Please let me know if you'd like to proceed with this.\n\nKind regards,\n<PERSON>", "agent_response": "Hi <PERSON>,\nI am so sorry to hear this! Please can you confirm your order number for me, and send across a picture of the batch number (long number on the lower back of the pouch).\nThank you for your patience!"}

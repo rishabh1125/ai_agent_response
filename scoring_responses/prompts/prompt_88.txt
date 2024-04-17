@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Agent's Message: Hi <PERSON>\nWe have received your query. One of our team members will get back to you shortly.\nCustomer's Message: Do you ship ammo to <LOCATION>?\nRight now I buy magazines from your company\nPlease advise\n<PERSON>\nNJ Office\n| 35 <LOCATION>, <LOCATION>, <LOCATION> <DATE_TIME>\n<EMAIL_ADDRESS>\n|\n<URL>\n<PERSON> <PHONE_NUMBER> c.<PHONE_NUMBER>\n", "response": "Hi <PERSON>, Yes We DO! In order to ship ammunition to <LOCATION>, you must provide one of the following identification cards: New Jersey Firearms Purchaser Identification Card, Valid Permit to Purchase a Handgun or Valid Permit to Carry a Handgun. Let me know if you have further questions and we hope to see you soon!", "agent_response": "Hi <PERSON>,\nYes we ship ammo and magazines to <LOCATION> as long as they comply with state law so no magazines over 10 rounds."}

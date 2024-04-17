@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Customer's Message: Hello\nI bought the Discovery set for a friend and was told the voucher lasted <DATE_TIME>.\nPlease see the attached screenshot.\ncan you please reconfirm this as I don\u2019t want her to have issues in using the voucher\n\nThank you\n\n<PERSON>\n", "response": "Hi <PERSON>,\n\nThank you for reaching out. I can confirm that the voucher included with the Discovery set is indeed valid for <DATE_TIME> from the date of purchase. Please rest assured your friend will have ample time to enjoy and choose her favorite scent.\n\nBest regards,\nIzzie Saltworks", "agent_response": "Hi <PERSON>,\nThank you for reaching out. I can confirm that the voucher included with the Discovery set is indeed valid for <DATE_TIME> from the date of purchase. Send me your code so I can check it for you.\nBest regards,\nIzzie Saltworks"}

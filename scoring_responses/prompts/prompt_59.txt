@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Agent's Message: <PERSON>!\n<PERSON>, dass du dich bei uns meldest\u2013 wir freuen uns total, dich an Bord zu haben.\n<LOCATION>... <LOCATION> in <LOCATION> und ist als \u201ewartet auf eine <LOCATION>\u201c markiert. Unser Team ist von <PERSON> <DATE_TIME> f\u00fcr dich da und wir <PERSON>, <PERSON> Werktagen f\u00fcr dich zu <LOCATION>.\n<PERSON> nichts <PERSON>, also <PERSON>, <PERSON>\n, <PERSON>Grazer\nund wir sind zur\u00fcck, <PERSON> <LOCATION> ;)\nBitte <PERSON>, <LOCATION>, da diese unseren <LOCATION> <PERSON>, alle unsere Kundentickets in <LOCATION> zu <LOCATION>, die <PERSON>!\n<PERSON>\nTeam PW\nCustomer's Message: Hallo\n\nWo ist meine Bestellung?\nWird die <PERSON> bzw. <LOCATION>?\n\nMfG\n", "response": "Hello <PERSON>,\n\nThank you for reaching out to us. I can confirm that your order is currently being processed. We will notify you with the tracking information as soon as it has been shipped.\n\nBest regards,\n<PERSON>", "agent_response": "<PERSON>,\n<PERSON> f\u00fcr <LOCATION>.\n<PERSON>, dass Ihre Bestellung derzeit <PERSON>. <PERSON> nach einem Update zu Ihrer Bestellung fragen und Sie so <PERSON> benachrichtigen."}

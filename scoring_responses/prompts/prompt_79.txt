@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Customer's Message: Hi guys the address on my order is incorrect again. I was wondering why they hadn\u2019t arrived.\nPlease could you re-send urgently to the following full address\nThe Willows\nCorner House Street\nLlwydcoed\nAberdare\nCF44 0YA\n\nPlease confirm\nKind regards <PERSON>\n", "response": "Hi <PERSON>,\n\nThank you for your message! I apologise for the inconvenience with the address issue. I have immediately prepared a new shipment for you, to be delivered to:\n\nThe Willows\nCorner House Street\nLlwydcoed\nAberdare\nCF44 0YA\n\nIt is expected to arrive within 2-3 working days. We appreciate your patience and understanding.\n\nKind regards,\n<PERSON>", "agent_response": "Hello Mr <PERSON>,\nThank you for reaching out to us !\nI am sincerely sorry to hear that the wrong address was put on the shipping label. Upon checking, your order is currently being returned to us. I have immediately prepared a new shipment for you, to be delivered to:\nThe Willows\nCorner House Street\nLlwydcoed\nAberdare\nCF44 <DATE_TIME>\nYou should have received an email of confirmation to this effect. It is expected to arrive within 2-3 working days !\nIf you have any further questions, feel free to contact us again. Have a great day. <PERSON>"}

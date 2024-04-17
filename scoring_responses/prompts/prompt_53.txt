@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Customer's Message: Hello,\n\nI placed an order prior to realizing I don't have available funds right now. Is it possible to cancel this order?\n\nThank you\n", "response": "Hi <PERSON>,\n\nTo assist you with the cancellation, could you please provide the order details? Once I have the information, I'll be able to proceed with your request.\n\nBest regards,\n<PERSON>", "agent_response": "Hi <PERSON>,\nTo assist you with the cancellation, could you please provide the order details? Once I have the information, I'll be able to proceed with your request."}

@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Customer's Message: Thank you!\nAgent's Message: I've just generated a new code for you, <LOCATION>:\nESZQ8Q8PR7Q6\nIt's valid for <DATE_TIME> and can be used once with your email address <EMAIL_ADDRESS>\nKind regards,\nJoanna\nCustomer's Message: Dear <PERSON>, can\u2019t find it in my box! Was it on a piece of paper? I haven\u2019t kept the packaging - was it in there?\nPlease can you send it to me again . Order number\u00a0Order #86678\n\nThanks\nCharlotte\nAgent's Message: Good <DATE_TIME>.\nYou should receive the \u00a325 voucher with your Discovery set.  If you enter the voucher code during checkout, the amount to be paid will be reduced by the value of the voucher, i.e. by \u00a325.\nKind regards,\nJoanna\nCustomer's Message: You received a new message from your online store's contact\n   form.\nCountry Code:\nGB\nProduct:\nProduct question for: <URL>\nName:\n<PERSON>\nEmail:\n<EMAIL_ADDRESS>\nBody:\nIn my email you said I could order 3 travel sizes for \u00a350. yet the shopping bag is coming up as \u00a375.  What is my discount code?\n", "response": "You're welcome, <LOCATION>! If you need any further assistance, feel free to contact us. Enjoy your shopping!\n\nKind regards,\n<PERSON>", "agent_response": "You're welcome, <LOCATION>! If you need any further assistance, feel free to contact us. Enjoy your shopping!\nKind regards,\n<PERSON>"}

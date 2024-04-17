@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Customer's Message: Hi,\n<PERSON>, in der App einloggen, <PERSON> abgelaufen, <PERSON> nach dem Einloggen darauf klicke.\n<PERSON>\n<PERSON>\n", "response": "Dear <PERSON>,\n\nWe do apologise for this matter, but we do not have any application that can be downloaded from app store or google play store. If you are trying to log in through a link, please ensure you are using the most recent one sent to your email. If issues persist, contact us directly for assistance.\n\nBest regards,\n<PERSON>", "agent_response": "<PERSON>,\nWir entschuldigen uns f\u00fcr dieses Problem, <PERSON>, die aus dem App Store oder Google Play Store <PERSON>. <LOCATION> <PERSON>, <PERSON> anzumelden, stellen Sie bitte sicher, dass Sie den neuesten Link verwenden, der Ihnen per E-Mail zugesandt wurde. Wenn das Problem <PERSON>, <PERSON> direkt f\u00fcr Unterst\u00fctzung."}

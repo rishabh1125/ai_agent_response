@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Customer's Message: Hi\nI had ordered a pendant and it\u2019s been <DATE_TIME> still not delivered. Why is it taking so much time ?\nI\u2019m tracking <DATE_TIME> now .\n", "response": "Dear Customer,\n\nWe sincerely apologize for the inconvenience caused due to the delay in your pending order. Could you please share your order details with us? This will help us to provide you with accurate information about your order status.\n\nBest Regards,\nTeam Blinglane", "agent_response": "Hello Riyanka,\nWe sincerely apologize for the inconvenience caused due to the delay in your pending order. Could you please share your order details with us? This will help us to provide you with accurate information about your order status.\nBest Regards,\nTeam Blinglane"}

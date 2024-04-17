@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Customer's Message: Hi,\n\nOur beautiful <PERSON> pendants arrived <DATE_TIME> and in perfect\u00a0shape, no issues there, but one was missing, the <PERSON>, is it coming separately? We asked the courier if he had another box and he said no.\n\nThanks,\nElle\n", "response": "Hi <PERSON>,\n\nThank you for your message and I'm glad to hear that most of your order arrived safely. Regarding the missing <PERSON> pendant, it's possible that it was shipped separately. I will check on this for you and confirm whether it has been sent in a different delivery.\n\nIn the meantime, could you please confirm if the address we have on file is still accurate for any potential follow-up shipments?\n\nBest regards,\n<LOCATION> Ferguson", "agent_response": "Hi Elle,\nThank you for your message and I'm glad to hear that most of your order arrived safely. Regarding the missing <PERSON> pendant, it was shipped <IN_PAN> due to the size of the parcels. Here is the tracking information:\n<URL>\nHope it arrives soon!"}

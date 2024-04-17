@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Agent's Message: Hi\u00a0<PERSON>,\nThank you for contacting us!\nOur Customer Care team is typically available from <DATE_TIME> Mountain Standard Time <DATE_TIME>.\nYour email is important to us! We will respond to your message as soon as possible during our <DATE_TIME>.\nPlease visit our\nHelp Center\nfor queries regarding tracking, returns, refunds, and order edits.\nWishing you the best in health and many blessings,\nThe Healthy Gut Team\nCustomer's Message: I am taking 3 pills a day for a month now no improvement yet.\n<PERSON>\n", "response": "Hello <PERSON>,\n\nI'm sorry to hear that you haven't seen improvements yet. Sometimes, it takes a bit longer for the body to respond. I'd love to help you further and discuss your experience in more detail. How about we schedule a free health coaching session? It's our way of supporting your journey.\n\nWarm regards,\n<PERSON>", "agent_response": "Hello <PERSON>,\nThank you for taking the time to read and respond to our emails. I'm sorry to hear that you haven't seen improvements yet. Sometimes, it takes a bit longer for the body to respond. We'd love to help you further and discuss your experience in more detail. What are your symptoms and do you tend more toward diarrhea or loose stools, if either?\nLooking forward to your response."}

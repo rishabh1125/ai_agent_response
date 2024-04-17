@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Agent's Message: Hello,\nWe have received your query. One of our team member will get back to you shortly.\nTo add additional comments, reply to this email.\nThank you,\nTeam Swadesii\nCustomer's Message: Hi there i am just wondering why my order is not getting any update its more then <DATE_TIME> please let me know.\nThank you\n", "response": "Hi,\n\nThank you for reaching out to us. We understand your concern regarding the update on your order. Please be assured that we require <DATE_TIME> on average to fulfill orders before dispatching them. Our team is working diligently to complete your order and will provide you with tracking information as soon as it is available.\n\nThank you for your patience.\n\nThanks,\n<PERSON>", "agent_response": "Hi <PERSON>,\nThank you for reaching out to us regarding your order.\nWe understand your concern about the lack of updates on your order. However, after reviewing our records, we couldn't locate any orders under your provided name or email ID. To assist you further, could you kindly share the order number with us?\nOnce we have the order number, we'll promptly investigate the status and provide you with the necessary updates. Your satisfaction is important to us, and we want to ensure a smooth and timely delivery of your order.\nThank you for your patience and cooperation. We're here to help resolve this issue for you.\nBest regards,\n<PERSON>"}

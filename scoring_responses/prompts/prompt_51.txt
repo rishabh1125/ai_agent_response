@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Customer's Message: Order Number: <US_DRIVER_LICENSE>\n\nHello all\n\nThis may not be feasible but I am asking just in case it is, I made an order in <DATE_TIME> but I cannot locate my \u00a325 voucher anymore, it was in the box but I may have accidentally binned it when I was disposing of the box.\n\nIs there a possibility to be issued with another voucher code? If not, it\u2019s absolutely fine but asking just in case.\n\nBest wishes\n\n<PERSON>-Ocloo\n", "response": "Good morning <PERSON>,\n\nPlease use this code instead 3LL92MR5ext for your \u00a325 voucher. If you require further assistance, do not hesitate to contact us.\n\nKind regards,\n<PERSON>", "agent_response": "Good morning, <PERSON>.\nPlease use this code 7KQ7HDWQDHZF instead. It's valid for <DATE_TIME> and can be used once with your email address <EMAIL_ADDRESS>\nIf you require further assistance, do not hesitate to contact us.\nKind regards,\n<PERSON>"}

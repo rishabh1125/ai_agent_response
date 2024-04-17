@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Customer's Message: Hi.\n\nI tend to skip breakfast most days which normally means I eat more for lunch. I feel bloated most of the time and I\u2019m looking for a breakfast shake to hopefully help to satisfy my needs but I\u2019d like some advice first? What the difference between the ultimate diet breakfast shake and the diet meal replacement extreme shake? I would if I could like to lose so weight also although I\u2019m not that active at the moment.\n\nPlease come back to me.\n\nThanks\n\n<PERSON>.\n", "response": "Hi <PERSON>,\n\nThank you for reaching out. The Ultimate Diet Breakfast Shake is designed to aid weight loss, providing a nutrient-dense meal under 250 calories to keep you full and suppress appetite. The Diet Meal Replacement Extreme offers a balance of protein, carbs, and essential nutrients with slightly more calories. Both can support your goals, especially if you're not very active currently.\n\nBest regards,\n<PERSON>", "agent_response": "Hi <PERSON>,\nThank you for reaching out. The Ultimate Diet Breakfast Shake is designed to aid weight loss, providing a nutrient-dense meal under 250 calories to keep you full and suppress appetite. The Diet Meal Replacement Extreme offers a balance of protein, carbs, and essential nutrients with slightly more calories. Both can support your goals, especially if you're not very active currently.\nBest regards,\n<PERSON>"}

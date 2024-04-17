@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Customer's Message: Hi, so I ordered a chain <DATE_TIME> and lost it, and on your website it says lifetime warranty. So can I get the same chain for free?\r\nSent from my iPhone\n", "response": "Dear Customer,\n\nThank you for reaching out to us. We understand your concern regarding the lost chain. However, please note that our lifetime warranty applies only to items that are experiencing degradation in quality or defects. Unfortunately, it does not cover loss of items. \n\nWe apologize for any inconvenience this may cause and appreciate your understanding.\n\nBest regards,\n[AGENT NAME]", "agent_response": "Hi <PERSON>,\nThank you for reaching out and bringing your concern to our attention regarding the lost chain.\nWe understand the importance of your jewelry, and we value our customers' satisfaction. However, we would like to clarify that our lifetime warranty primarily covers items experiencing a degradation in quality or defects. Unfortunately, it does not extend to cover the loss of items.\nWe sincerely apologize for any inconvenience this may cause. If you have any further inquiries or require assistance, please don't hesitate to let us know. We're here to assist you in any way we can.\nBest Regards,\nMichelle\nAwareness Avenue Customer Support"}

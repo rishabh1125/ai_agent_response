@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Agent's Message: Customer Service Rep\nHi <PERSON>\nWe have received your query. One of our team members will get back to you shortly.\nCustomer's Message: Hi!\n\nLove your <PERSON> fabric! But have had many customers request it in black. Any chance of it ever being available in black?\n\nThe charcoal is not quite black enough. I do not resell - but do make purses with it!\n\nThanks!\n<PERSON>\n", "response": "Hello <PERSON>,\n\nWe do not have <PERSON> in a dark black, as of yet, we do sell it in Charcoal. We do have a dark black in the <PERSON> line though. I hope that helps!\n\nBest,\nJanelle", "agent_response": "Hello <PERSON>,\nI know what you mean! Unfortunately, we cannot make it in black, although we have tried to get samples done in black. The process and softness of it, creates a faded look. I am sorry, I wish it was darker too. I may try again with the samples to see if we can get it close. Thank you for your inquiry!!\nJanelle"}

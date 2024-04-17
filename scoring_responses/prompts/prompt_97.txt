@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Customer's Message: Yes, that address is correct.\nAgent's Message: Hi Matilda,\nThank you for choosing My Derma Dream. \ud83d\ude0a\nI'm going to send out the email confirmation again. In a moment, you'll have it.\nAn update has been made to your shipping address. please confirm below\nCustomer's Message: My apartment number is 302 not <URL>ease thanks you.\nCustomer's Message: My apartment number is not 303 is a mistake\n\nMy apartment number is 302.\n\nLet give my full address again\n\n9111 contee raod <LOCATION> apartment 302.\n\nTele. <PHONE_NUMBER>\nCustomer's Message: Hello my name is <PERSON> I just ordered my serum now and the message machine but I was unable to see my order message on my email. Can u help\u00a0me <IN_PAN>\n<PHONE_NUMBER>\n", "response": "Hello Matilder,\n\nThank you for confirming your address. Rest assured, we have updated it to Apartment 302. Your order will be on its way to the correct location.\n\nWarm regards,\n<PERSON>", "agent_response": "Hello Matilder \ud83d\ude0a\nThank you for confirming your address.\nRest assured, we have updated it to Apartment 302.\nMy Derma Dream \ud83d\udc95"}

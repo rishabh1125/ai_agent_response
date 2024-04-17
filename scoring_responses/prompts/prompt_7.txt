@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Customer's Message: New customer message on <DATE_TIME> at <DATE_TIME>\n\nYou received a new message from your online store's contact\n   form.\nCountry Code:\n<LOCATION>\nFull Name:\n<PERSON>\nEmail:\n<EMAIL_ADDRESS>\nBody:\nHi\n   I wanted my order #<US_DRIVER_LICENSE> to be delivered to a different address not my address, is it still possible to rectify this???\n   Thank you\n   <PERSON>\n", "response": "Hi <PERSON>,\n\nThank you for reaching out to us. We are more than happy to assist you in updating the shipping information on your order.\nPlease provide us the correct shipping address so we can change it on our system and notify our warehouse team.\nWe look forward to hearing from you soon.\n\nBest regards,\n<PERSON>", "agent_response": "Hi <PERSON>,\nThank you for reaching out to us. We are more than happy to assist you in updating the shipping information on your order.\nPlease provide us the correct shipping address so we can change it on our system and notify our warehouse team.\nWe look forward to hearing from you soon.\nBest regards,\n<PERSON>\nAwareness Avenue Customer Support"}

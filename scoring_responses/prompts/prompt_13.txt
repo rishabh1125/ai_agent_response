@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Customer's Message: order # <US_BANK_NUMBER>\nPlease provide a refund confirmation as I do not see a refund to my account for the order that was canceled by your company.  Thank you\nAgent's Message: Hi <PERSON>\nWe have received your query.\nWe see that you have an open order in process and have prioritized your request.\nPlease visit\n<URL>\nto view our FAQ.\nCustomer's Message: I didn't receive\u00a0this order, it was not fraudulent. Did I receive\u00a0a refund?\n", "response": "Hi,\n\nThank you for reaching out. I've checked the status of your order #<US_BANK_NUMBER> and can confirm that it was cancelled. A refund has been processed, and you should see it reflected in your account shortly. If you need any further assistance, please let me know.\n\nBest regards,\n<PERSON>", "agent_response": "Hello,\nThank you for <IN_PAN> us. I have reviewed your order #<US_BANK_NUMBER> and can confirm that it has been canceled. A refund was initiated on <DATE_TIME>, and the funds should be credited back to your account soon. If you require any additional assistance, please don't hesitate to let me know.\nBest regards,\n<PERSON>"}

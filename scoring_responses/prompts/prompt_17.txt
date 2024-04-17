@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Customer's Message: Any update\u00a0on this?\nCustomer's Message: Hi\n\u00a0 \u00a0 \u00a0It has been <DATE_TIME> I ordered this, will I get this or not?\n", "response": "Hello <PERSON>,\n\nGood Evening! Please accept our apologies for the inconvenience caused. We're currently upgrading our website and have migrated to a new system to improve our services online. Our team is following up personally to resolve this and will update your order status via email. Also, you will be able to login and check your order status within 1-2 working days. We will send account password reset emails to re-activate your account shortly. We appreciate your patience and understanding.\n\nBest,\nTeam Blinglane", "agent_response": "Hello <PERSON>,\nWe apologize for the inconvenience you are experiencing. We understand that you have been waiting for your order for quite some time now. Let me investigate this issue further and get back to you with an update as soon as possible.\nBest Regards,\nTeam Blinglane"}

@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Customer's Message: Is there anyway for me to change the address to 517 stone Dr <LOCATION> KS 66503 apt <DATE_TIME>?\nThe address that is currently listed is my old address and I don\u2019t live there anymore.\n\nSincerely,\n<PERSON>\n", "response": "Dear <PERSON>,\n\nThank you for reaching out to us!\n\nWe have successfully updated your shipping address to:\n\n<LOCATION> <PERSON>\n517 Stone Dr Apt <DATE_TIME>\n<LOCATION>, <LOCATION>\n<LOCATION>\n\nPlease look out for a confirmation email regarding the update. If you need any further assistance, feel free to contact us.\n\nBest regards,\n<PERSON>\nCustomer Support", "agent_response": "<LOCATION>,\nThank you for reaching out to us!\nNo worries, we have successfully updated your shipping address to:\n<PERSON>\n517 Stone Dr Apt <DATE_TIME>\n<LOCATION>, <NRP>\nIf you need any further assistance, feel free to contact us.\nBest regards,\n<PERSON>\nCustomer Support"}

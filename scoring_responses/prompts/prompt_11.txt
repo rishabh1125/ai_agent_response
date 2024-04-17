@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Customer's Message: There\u2019s no issues at all ! \u00a0 \u00a0I\u2019m more than happy with my products and costumer services. Thanks\n", "response": "Hey there,\n\nGlad to hear you're satisfied! If there's anything else we can do for you, just let us know. Your happiness with our products and customer service is our top priority.\n\nBest regards,\n<PERSON>", "agent_response": "Hey Kristian,\nGlad to hear you're satisfied! If there's anything else we can do for you, just let us know. Your happiness with our products and customer service is our top priority.\nBest regards,\n<PERSON>"}

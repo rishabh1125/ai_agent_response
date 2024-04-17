@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Customer's Message: My name is <PERSON> and I recently ordered from your company and UPS is having difficulty delivering. Can you send me a tracking number so I can contact UPS directly and pick up the package?\n\nThanks,\n<PERSON>\n", "response": "Hello <PERSON>,\n\nI'm truly sorry to hear about the trouble with your delivery. I understand how important it is to receive your package promptly. Here's your tracking number so you can get in touch with UPS and arrange for a pick-up:\n\nTracking Number: [Insert Tracking Number Here]\n\nPlease don't hesitate to reach out if there's anything more I can do for you.\n\nWarm regards,\nJAY AUTOR", "agent_response": "Hello <PERSON>,\nI'm so sorry to hear about the trouble with your delivery. Let's get this sorted out for you right away. Could you please provide me with your order number and the email address associated with your purchase?\nOnce I have that information, I'll be able to check on the status of your delivery and provide you with the tracking number.\nWarm regards,\nJAY"}

@@ -1,0 +1,10 @@
+Given below are context, human response and AI agent response to an e-commerce. You have to score  similarity between the 2 resposnes based on follwing criteria, please give 1 for same/ 0 mark for different values.
+- User action needed (eg. Share order details, Share image of product, etc)
+- Agent actions updated(eg. Refund has been processed,  Your address is updated etc., )
+- Agent action attribute(eg. Refund amount processed , Days to reflect changes etc) 
+- Format( should salutation, body,regards in order) 
+- Tone (values: apologetic/gratitude, etc)
+Share your answer as json object of format {"user_actions": ,"agent_actions": , "agnet_action_attributes": ,"format":,"tone":,""} - 
+
+
+{"prev_context": "Customer's Message: Hi,\nI recently placed 2 different orders for your Aptos shoes. Size 8.5 the first time and size 9 the second time. The 8.5s were too small so I packaged them up and dropped them off with FedEx using a shipping label you provided. They were given to FedEx on <DATE_TIME>. Unfortunately I did not make note of the tracking number and I have not seen any credit to my account. Would you be able to provide the status of that return? My name is <PERSON> and I live in <LOCATION>, CT\n\nThank you for your help!\nSent from AT&T Yahoo Mail on <LOCATION>\n", "response": "Hello <PERSON>,\n\nThank you for reaching out. I apologize for any inconvenience caused. I have looked into your return and can confirm that the refund was processed on <DATE_TIME>. Please allow <DATE_TIME> for the credit to reflect in your account. If you have any further concerns, feel free to contact us.\n\nBest regards,\n<PERSON>", "agent_response": "Hello <PERSON>,\nThank you for reaching out! I'm sorry to hear about the trouble you've been experiencing.\nI've checked our records and it looks like your refund was processed on <DATE_TIME>. It should be credited back to your account within <DATE_TIME>. If you don't see it by then, please let me know so I can investigate further.\nIf there's anything else I can assist you with, please don't hesitate to ask. I'm here to help!\nWarm regards,\n<PERSON>"}
